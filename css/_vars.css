@@ -1,0 +1,18 @@
+/**
+ * Variables
+ */
+
+$maincolor: firebrick;
+$lightgray: #f1f1f1;
+$gray: #ccc;
+$darkgray: #222;
+
+$bodybgcolor: $lightgray;
+$bodytextcolor: $darkgray;
+$pholdercolor: green;
+
+$select_bg: color($maincolor a(40%)); /*default #b3d4fc*/
+$select_tx: #000;
+
+$fontSize: 1em;
+$lineHeight: 1.45em;

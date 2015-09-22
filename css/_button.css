@@ -1,0 +1,31 @@
+/**
+ * Buttons
+ */
+
+@define-mixin style-button $color, $textColor {
+
+	display: inline-block;
+	min-height: $lineHeight;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	outline: 0;
+	transition: none;
+	background: $color;
+	color: $darkgray;
+	border: 1px solid color($color a(90%));
+
+	&:hover {
+		background: color($color a(90%));
+		color: $textColor;
+		border-color: $color;
+	}
+}
+
+
+.button--primary {
+	font-weight: 700;
+	padding: 10px 25px;
+	@mixin style-button $maincolor, $lightgray;
+	color: #fff;
+}

@@ -1,0 +1,17 @@
+/**
+ * Helper mixins
+ */
+
+@define-mixin bp $width {
+
+	@media (max-width: $width) {
+		@mixin-content;
+	}
+}
+
+@define-mixin bp-min $width {
+
+	@media (min-width: $width) {
+		@mixin-content;
+	}
+}
