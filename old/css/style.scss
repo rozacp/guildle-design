@@ -1,0 +1,166 @@
+/**
+ * Main style file, with imports
+ */
+
+@import 'normalize';
+@import 'jeet/index';
+@import 'helpers';
+@import 'vars';
+@import 'base';
+@import 'typography';
+// @import 'print';
+@import 'link';
+@import 'button';
+
+
+// jeet edit helper
+// @include edit();
+
+header {
+	background-image: url(../img/nelf.png); //wallhaven-59510
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+}
+
+.top {
+	@include center(1200px);
+	padding-top: 50px;
+	color: $white;
+	position: relative;
+
+	p {
+		font-size: 1.2em;
+		text-shadow: 2px 2px rgba(0,0,0,.8);
+	}
+
+	.search, .get-started {
+		margin-top: 80px;
+		@include span(1/2);
+		padding: 20px;
+	}
+
+	.search {
+		text-align: right;
+	}
+
+	.get-started {
+		text-align: left;
+	}
+
+	.slogan {
+		margin-top: 60px;
+		color: $white;
+		text-shadow: 2px 2px rgba(0,0,0,.8);
+	}
+}
+
+.user {
+	// position: absolute;
+	// top: 50px;
+	// right: 0;
+	text-align: right;
+	// color: $white;
+
+	img {
+		border: 1px solid $darkgray;
+		width: 80px;
+	}
+}
+
+nav {
+	@include center(1200px);
+	margin-top: 3px;
+	border-bottom: 1px solid $gray;
+
+	ul {
+		@include cf();
+		margin: 0 auto;
+		padding: 0;
+		max-width: 800px;
+
+		li {
+			@include span(1/5);
+			list-style: none;
+
+			a {
+				text-align: center;
+				display: block;
+				line-height: 40px;
+				height: 40px;
+				text-decoration: none;
+				text-transform: uppercase;
+				border-bottom: 3px solid transparent;
+				color: $maincolor;
+				font-weight: 700;
+				&:hover {
+					border-bottom: 3px solid #444;
+				}
+				&.active {
+					color: invert($maincolor);
+					border-bottom: 3px solid #444;
+				}
+			}
+		}
+	}
+}
+
+
+main {
+	@include center(1200px);
+	margin-top: 40px;
+	margin-bottom: 20px;
+
+	article {
+		@include box;
+		@include col(3/4);
+	}
+
+	aside {
+		@include box;
+		@include col(1/4);
+
+		.button--primary {
+			margin-bottom: 15px;
+		}
+
+	}
+}
+
+footer {
+	background: #222;
+	height: 250px;
+	color: $white;
+	text-align: center;
+	padding: 20px;
+}
+
+
+input {
+	background: $white;
+	border: 1px solid $gray;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	width: 100%;
+	padding: 10px;
+
+	&:hover {
+		border: 1px solid $maincolor;
+	}
+}
+
+
+// code {
+// 	border-bottom: 1px solid #aaa;
+// 	background: rgba($maincolor, 0.1);
+// 	padding: 0 5px;
+// 	display: inline-block;
+// }
+
+// hr {
+// 	display: block;
+// 	border: 0;
+// 	border-top: 1px solid #ccc;
+// 	margin: 1em 0;
+// 	padding: 0;
+// }

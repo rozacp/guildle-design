@@ -1,0 +1,56 @@
+/**
+*
+* Buttons
+*
+**/
+
+@mixin style-button($color, $textColor) {
+
+	display: inline-block;
+	min-height: $lineHeight;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	outline: 0;
+	transition: none;
+	background: $color;
+	color: $darkgray;
+	border: 1px solid darken($color, 10%);
+
+	&:hover {
+		background: darken($color, 10%);
+		color: $textColor;
+		border-color: $color;
+	}
+}
+
+
+.button--primary {
+	font-weight: 700;
+	padding: 10px 25px;
+	@include style-button($maincolor, $lightgray);
+	color: $white;
+}
+
+.button--secondary {
+	@extend .button--primary;
+	@include style-button(green, $lightgray);
+	color: $white;
+}
+
+.button--tertiary {
+	@extend .button--primary;
+	@include style-button(lightblue, $lightgray);
+}
+
+.button--small {
+	padding: 3px 10px;
+	@include style-button(orange, $lightgray);
+}
+
+.button--intro {
+	padding: 15px 30px;
+	font-weight: 700;
+	width: 170px;
+	@include style-button(orange, $lightgray);
+}

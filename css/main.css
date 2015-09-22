@@ -7,6 +7,39 @@
 @import 'vars';
 @import 'base';
 @import 'typography';
-@import 'print';
+/*@import 'print';*/
 @import 'link';
 @import 'button';
+
+@lost flexbox flex;
+
+header {
+	// lost-utility: edit;
+	background-color: orange;
+}
+
+
+// nav {
+// 	lost-center: 980px;
+// }
+
+// .logo {
+// 	/*lost-column: 1/4 0;*/
+// 		// width: 100%;
+// }
+
+// .menu {
+// 	/*lost-column: 3/4 0;*/
+// 		// width: 100%;
+
+// 	ul {
+// 		lost-align: right;
+// 		height: 80px;
+// 		// width: 100%;
+
+// 		li {
+// 			list-style: none;
+// 			/*lost-column: 1/5 0 0;*/
+// 		}
+// 	}
+// }

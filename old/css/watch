@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Sass is watching you!"
+
+sass --watch style.scss:style.css --style expanded

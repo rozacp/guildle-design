@@ -1,0 +1,17 @@
+/**
+* Link
+**/
+
+main {
+	a {
+		text-decoration: none;
+		color: $maincolor;
+		border-bottom: 1px solid #aaa;
+		&:hover {
+			color: invert($maincolor);
+			border-color: $maincolor;
+		}
+	}
+}
+
+
