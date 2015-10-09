@@ -2,17 +2,26 @@
  * Variables
  */
 
-$maincolor: firebrick;
-$lightgray: #f1f1f1;
-$gray: #ccc;
-$darkgray: #222;
+$common: #ffffff;
+$uncommon: #1eff00;
+$rare: #0070dd;
+$epic: #a335ee;
+$legendary: #ff8000;
+$heriloom: #e6cc80;
 
-$bodybgcolor: $lightgray;
-$bodytextcolor: $darkgray;
-$pholdercolor: green;
 
-$select_bg: color($maincolor a(40%)); /*default #b3d4fc*/
+
+$maincolor: $legendary;
+$secondarycolor: $epic;
+
+
+$bodybgcolor: #f0f0f0;
+$bodytextcolor: #666;
+
+$pholdercolor: $rare;
+
+$select_bg: color($uncommon a(40%)); /*default #b3d4fc*/
 $select_tx: #000;
 
-$fontSize: 1em;
-$lineHeight: 1.45em;
+$fontSize: 1.1em;
+$lineHeight: 1.55em;

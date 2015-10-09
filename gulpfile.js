@@ -31,7 +31,7 @@ gulp.task('css', function() {
 
 	return gulp.src(path.css)
 		.pipe(postcss(plugins))
-		.pipe(nano())
+		// .pipe(nano())
 		.pipe(rename('main.min.css'))
 		.pipe(gulp.dest(path.dest));
 });

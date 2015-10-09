@@ -2,7 +2,7 @@
  * Link
  */
 
-a {
+section a {
 	text-decoration: none;
 	color: $maincolor;
 	border-bottom: 1px solid #aaa;
