@@ -15,3 +15,105 @@
  * User styles here
  */
 
+ @lost flexbox flex;
+
+ body {
+ 	/*lost-utility: edit;*/
+ }
+
+ header {
+ 	height: 80px;
+ 	width: 100%;
+ 	background-color: $maincolor;
+ 	/*position: fixed;*/
+ 	/*z-index: 999;*/
+ 	display: flex;
+ 	/*align-items: center;*/
+
+ 	nav {
+ 		/*lost-center: 960px;*/
+ 		margin: auto;
+ 		width: 100%;
+ 		max-width: 960px;
+ 		display: flex;
+ 		justify-content: space-between;
+ 		/*align-items: center;*/
+
+ 		.logo {
+
+ 			img {
+ 				height: 50px;
+ 			}
+ 		}
+
+ 		.menu {
+
+ 			ul {
+ 				list-style: none;
+ 				margin: 0;
+ 				padding: 0;
+ 				display: flex;
+ 				width: 500px;
+ 				justify-content: space-between;
+
+ 				li {
+ 					a {
+ 						font-size: 1.1em;
+ 						color: #fff;
+ 						text-transform: uppercase;
+ 						text-decoration: none;
+ 						height: 50px;
+ 						line-height: 50px;
+ 						display: block;
+ 						padding: 0 15px;
+
+ 						&:hover {
+ 							color: $secondarycolor;
+ 							background-color: #fff;
+ 						}
+ 						&.active {
+ 							border: 1px solid #fff;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+
+ .hero {
+ 	height: 400px;
+ 	background-color: #342045;
+ 	/*background-color: $epic;*/
+ 	/*display: flex;*/
+ 	/*padding: 0 20px;*/
+ 	text-align: center;
+ 	color: #fff;
+
+ 	div {
+ 		width: 90%;
+ 		margin: 0 auto;
+ 		padding: 40px 0;
+
+ 		img {
+ 			height: 120px;
+ 		}
+ 	}
+
+ 	h1 {
+ 		font-size: 2.625em;
+ 		font-weight: 400;
+ 	}
+ }
+
+ .choice {
+ 	lost-center: 960px;
+ 	background-color: #fff;
+ 	padding: 10px 20px;
+ 	/*padding: 20px;*/
+ }
+
+ footer {
+ 	height: 300px;
+ 	background-color: $rare;
+ }
