@@ -1,0 +1,17 @@
+/**
+ * Helper mixins
+ */
+
+@function gold($num) {
+	@return $num * 1.618
+}
+
+@function em($px) {
+  @return #{$px/16}em
+}
+
+@mixin bp($width) {
+	@media (max-width: em($width)) {
+		@content;
+	}
+}
